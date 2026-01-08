@@ -1,0 +1,36 @@
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+/* Navbar styles */
+.navbar {
+    width: 100%;
+    background-color: yellow;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end; /* This pushes items to the right */
+    align-items: center;
+    gap: 2.5rem;
+    margin: 0;
+    padding: 1rem 2rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.toggle-btn {
+    color: var(--text-color);
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: color 0.5s;
+}
+
+/* Footer styles */
+.footer {
+    text-align: center;
+}
