@@ -1,11 +1,66 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* --primary-color: #ff8c69; */
+    --primary-color: #00afef;
+    --background-color: #fff;
+    --project-color: rgba(0, 0, 0, .1);
+    --text-color: #151515;
+}
+
+@media screen and (max-width: 1440px) {
+    section {
+        padding: 4rem 10%;
+    }
+}
+
 body {
     font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+section {
+    padding: 4rem 15%;
+}
+
+.title {
+    color: var(--primary-color);
+    margin: 3rem 0;
+}
+
+h6 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.btn {
+    color: white;
+    background-color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+    display: inline-block;
+    font-weight: 600;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: .5rem 1.5rem;
+    border-radius: 1.5rem;
+    cursor: pointer;
+    transition: background-color 0.5s;
 }
 
 /* Navbar styles */
 .navbar {
     width: 100%;
-    background-color: yellow;
+    background-color: gray;
 }
 
 .nav-links {
@@ -28,6 +83,56 @@ body {
     font-size: 1.5rem;
     cursor: pointer;
     transition: color 0.5s;
+}
+
+/* Shared */
+.about-me, .contact {
+    text-align: center;
+}
+
+/* ABOUT ME */
+.about-me-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-me-left {
+    width: 55%;
+}
+
+.about-me-right {
+    width: 40%;
+}
+
+.about-me-left p {
+    text-indent: 4rem;
+}
+
+.about-me-left p,
+.about-me-right p {
+    margin-bottom: 1rem;
+    line-height: 1.75rem;
+}
+
+.about-me-left p:last-child,
+.about-me-right p:last-child {
+    margin-bottom: 0rem;
+}
+
+.about-me-left p a {
+    color: var(--text-color);
+    transition: color 1s;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+/* CONTACT */
+
+.contact .btn {
+    margin: 2rem 0;
 }
 
 /* Footer styles */
