@@ -12,12 +12,6 @@
     --text-color: #151515;
 }
 
-@media screen and (max-width: 1440px) {
-    section {
-        padding: 4rem 10%;
-    }
-}
-
 body {
     font-family: 'Inter', sans-serif;
     margin: 0;
@@ -33,6 +27,7 @@ section {
 
 .title {
     color: var(--primary-color);
+    text-align: center;
     margin: 3rem 0;
 }
 
@@ -90,11 +85,6 @@ h6 {
     transition: color 0.5s;
 }
 
-/* Shared */
-.about-me, .contact {
-    text-align: center;
-}
-
 /* ABOUT ME */
 .about-me-container {
     display: flex;
@@ -120,10 +110,10 @@ h6 {
     line-height: 1.75rem;
 }
 
-.about-me-left p:last-child,
+/* .about-me-left p:last-child,
 .about-me-right p:last-child {
     margin-bottom: 0rem;
-}
+} */
 
 .about-me-left p a {
     color: var(--text-color);
